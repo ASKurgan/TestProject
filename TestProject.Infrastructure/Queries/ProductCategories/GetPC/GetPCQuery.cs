@@ -26,7 +26,7 @@ namespace TestProject.Infrastructure.Queries.ProductCategories.GetPC
         {
             var productCategory = await _dbContext.PCReadModels
                                          .Include(pc => pc.Products)
-                                         .FirstOrDefaultAsync(pc => pc.Id == request.ProductCategoryId);
+                                         .FirstOrDefaultAsync(pc => pc.Id == request.ProductCategoryId, ct);
 
             if (productCategory == null)
             {

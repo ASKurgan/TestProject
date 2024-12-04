@@ -8,7 +8,7 @@ using TestProject.Domain.Base;
 using TestProject.Domain.Entities;
 
 namespace TestProject.Application.Features.ProductCategoryFolder.PublishProduct
-{
+{ 
     public class PublishProductHandler
     {
         private readonly IProductCategoryRepository _productCategory;
@@ -51,4 +51,5 @@ namespace TestProject.Application.Features.ProductCategoryFolder.PublishProduct
             return pc.Id; 
         }
     }
+    
 }
